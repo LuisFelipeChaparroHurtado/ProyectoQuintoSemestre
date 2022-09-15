@@ -1,0 +1,61 @@
+
+==========================================================================================================================
+                                                        CONSTRAINS DB
+==========================================================================================================================
+
+- PRODUCT_TYPE
+     - LLAVE PRIMARIA 
+       ALTER TABLE product_type ADD PRIMARY KEY (id_product_type);
+- PRODUCT 
+     - LLAVE PRIMARIA 
+       ALTER TABLE product ADD PRIMARY KEY (id_product);
+     - LLAVE FORANEA
+       ALTER TABLE product ADD FOREIGN KEY (fk_id_product_type) REFERENCES PRODUCT_TYPE (id_product_type);
+- PERSON 
+     - LLAVE PRIMARIA
+       ALTER TABLE person ADD PRIMARY KEY (id_person);
+- PROVIDER 
+     - LLAVE PRIMARIA 
+       ALTER TABLE provider ADD PRIMARY KEY (id_provider);
+- PRODUCT PROVIDER 
+     - LLAVE PRIMARIA 
+       ALTER TABLE product_provider ADD PRIMARY KEY (id_product_provider);
+     - LLAVE FORANEA
+       ALTER TABLE product_provider ADD FOREIGN KEY (fk_id_provider) REFERENCES provider (id_provider);
+       ALTER TABLE product_provider ADD FOREIGN KEY (fk_id_provider) REFERENCES product (id_product);
+- PRICE PRODUCT 
+     - LLAVE PRIMARIA
+       ALTER TABLE price_product ADD PRIMARY KEY (id_price);
+     - LLAVE FORANEA 
+       ALTER TABLE price_product ADD FOREIGN KEY (fk_id_product_provider) REFERENCES product_provider (id_product_provider);
+- TAX
+     - LLAVE PRIMARIA
+       ALTER TABLE tax ADD PRIMARY KEY (id_tax);
+- TAX PRICE PRODUCT
+     - LLAVE PRIMARIA  
+       ALTER TABLE tax_price_product ADD PRIMARY KEY (id_price_tax);
+     - LLAVE FORANEA 
+       ALTER TABLE tax_price_product ADD FOREIGN KEY (fk_id_price) REFERENCES price_product (id_price);
+       ALTER TABLE tax_price_product ADD FOREIGN KEY (fk_id_tax) REFERENCES tax (id_tax);
+- TICKET PRODUCT 
+     - LLAVE PRIMARIA 
+       ALTER TABLE ticket_product ADD PRIMARY KEY (id_ticket_product);
+     - LLAVE FORANEA
+       ALTER TABLE ticket_product ADD FOREIGN KEY (fk_id_person_cajero) REFERENCES person (id_person);
+       ALTER TABLE ticket_product ADD FOREIGN KEY (fk_id_person_cliente) REFERENCES person (id_person);
+- TYPE PERSON
+     - LLAVE PRIMARIA 
+       ALTER TABLE person_type ADD PRIMARY KEY (id_person_type);
+- TICKET DETAIL
+     - LLAVE PRIMARIA
+       ALTER TABLE ticket_detail ADD PRIMARY KEY (id_ticket_detail);
+     - LLAVE FORANEA
+       ALTER TABLE ticket_detail ADD FOREIGN KEY (fk_id_price_tax) REFERENCES TAX_PRICE_PRODUCT (id_price_tax);
+       ALTER TABLE ticket_detail ADD FOREIGN KEY (fk_id_ticket_product) REFERENCES TICKET_PRODUCT (id_ticket_product);
+       ALTER TABLE ticket_detail ADD FOREIGN KEY (fk_id_person_admin) REFERENCES PERSON (id_person);
+- PERSON PERSON_TYPE
+     - LLAVE PRIMARIA 
+       ALTER TABLE person_person_type ADD PRIMARY KEY (id_person_person_type);
+     - LLAVE FORANEA 
+       ALTER TABLE person_person_type ADD FOREIGN KEY (fk_id_person_type) REFERENCES TYPE_PERSON (id_person_type);
+       ALTER TABLE person_person_type ADD FOREIGN KEY (fk_id_person) REFERENCES PERSON (id_person);

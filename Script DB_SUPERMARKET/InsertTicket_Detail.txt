@@ -1,0 +1,23 @@
+
+ALTER TABLE ticket_detail ALTER COLUMN description_devolution SET DATA TYPE VARCHAR (70);
+
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket,devolution_request, devolution_approved, description_devolution, fk_id_person_administrator) VALUES(1,5,3,1,'2021-10-01','2021-10-07','El producto expiro la fecha de vencimiento',9);
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket) VALUES(2,1,5,2);
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket) VALUES(3,1,6,3);
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket) VALUES(4,3,7,4);
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket) VALUES(5,8,8,5);
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket) VALUES(6,10,2,6);
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket) VALUES(7,12,10,7);
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket) VALUES(8,2,11,8);
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket) VALUES(9,1,16,9);
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket) VALUES(10,20,17,10);
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket,devolution_request, devolution_approved, description_devolution, fk_id_person_administrator) VALUES(11,3,18,11,'2021-09-20','2021-10-02','El producto salio defectuoso, el plato agitador se encuentra roto',1);
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket,devolution_request, devolution_approved, description_devolution, fk_id_person_administrator) VALUES(12,5,9,12,'2021-09-20','2021-10-02','La verdura se descompuso y tiene mal olor',1);
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket,devolution_request, devolution_approved, description_devolution, fk_id_person_administrator) VALUES(13,9,20,13,'2021-09-20','2021-10-02','Los parales de la cama salieron con grietas',9);
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket) VALUES(14,1,15,14);
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket) VALUES(15,2,16,15);
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket) VALUES(16,2,17,16);
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket) VALUES(17,5,18,17);
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket,devolution_request, devolution_approved, description_devolution, fk_id_person_administrator) VALUES(18,6,19,18,'2021-09-20','2021-10-02','La espuma de el sofa salio hundida y partida',9);
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket,devolution_request, devolution_approved, description_devolution, fk_id_person_administrator) VALUES(19,2,20,19,'2021-09-20','2021-10-02','Las tablas de la cama venian impletas y en un mal estado',1);
+INSERT INTO ticket_detail(id_ticket_detail, amount,fk_id_tax_price_product,fk_id_ticket,devolution_request, devolution_approved, description_devolution, fk_id_person_administrator) VALUES(20,5,1,20,'2021-09-20','2021-10-02','El producto salio dañado',9);

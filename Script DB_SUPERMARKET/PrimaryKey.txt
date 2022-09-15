@@ -1,0 +1,12 @@
+ALTER TABLE product_type ADD PRIMARY KEY (id_product_type);
+ALTER TABLE product ADD PRIMARY KEY (id_product);
+ALTER TABLE person ADD PRIMARY KEY (id_person);
+ALTER TABLE provider ADD PRIMARY KEY (id_provider);
+ALTER TABLE product_provider ADD PRIMARY KEY (id_product_provider);
+ALTER TABLE price_product ADD PRIMARY KEY (id_price_product);
+ALTER TABLE tax ADD PRIMARY KEY (id_tax);
+ALTER TABLE tax_price_product ADD PRIMARY KEY (id_tax_price_product);
+ALTER TABLE ticket ADD PRIMARY KEY (id_ticket);
+ALTER TABLE person_type ADD PRIMARY KEY (id_person_type);
+ALTER TABLE ticket_detail ADD PRIMARY KEY (id_ticket_detail);
+ALTER TABLE person_person_type ADD PRIMARY KEY (id_person_person_type);

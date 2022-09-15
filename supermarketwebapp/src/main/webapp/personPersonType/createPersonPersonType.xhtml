@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Taller Video</title>
+    </h:head>
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="content">
+
+            <h:form id="frmData">
+
+                <div align="center" id="divData">
+                    <p:panelGrid columns="2" style="width: 50%">
+                        <f:facet name="header">PERSON PERSON TYPE CREATION FORM</f:facet>
+
+                        <p:outputLabel value="PersonType"/>
+                        
+                        <h:selectOneMenu  value="#{personPersonTypeController.fkIdPersonType}" id="personType" style="width: 100%; height: 30px">
+                            <f:selectItem itemLabel="Select One" itemValue=""/>
+                            <f:selectItems value="#{personTypeController.personTypeListado}" var="listPersonType"
+                                           itemLabel="#{listPersonType.person_type_name}" itemValue="#{listPersonType.id}" />
+                        </h:selectOneMenu>
+
+
+                        <p:outputLabel value="Person"/>  
+                        <h:selectOneMenu  value="#{personPersonTypeController.fkIdPerson}" id="person" style="width: 100%; height: 30px">
+                            <f:selectItem itemLabel="Select One" itemValue=""/>
+                            <f:selectItems value="#{personController.personListado}" var="listPerson"
+                                           itemLabel="#{listPerson.person_first_name}" itemValue="#{listPerson.id}" />
+                        </h:selectOneMenu>
+
+                        <f:facet name="footer">
+                            <p:commandButton id="btnGuardarPersonType" style="margin-left: 35%"  value="Create Person Person Type" ajax="false" action="#{personPersonTypeController.grabarPersonPersonType()}"/>
+                        </f:facet>
+                    </p:panelGrid>
+
+                </div>
+
+            </h:form>
+        </ui:define>
+    </ui:composition>    
+</html>

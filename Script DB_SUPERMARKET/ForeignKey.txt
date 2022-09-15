@@ -1,0 +1,15 @@
+ALTER TABLE product ADD FOREIGN KEY (fk_id_product_type) REFERENCES PRODUCT_TYPE (id_product_type);
+ALTER TABLE product_provider ADD FOREIGN KEY (fk_id_provider) REFERENCES provider (id_provider);
+ALTER TABLE product_provider ADD FOREIGN KEY (fk_id_provider) REFERENCES product (id_product);
+ALTER TABLE price_product ADD FOREIGN KEY (fk_id_product_provider) REFERENCES product_provider (id_product_provider);
+ALTER TABLE tax_price_product ADD FOREIGN KEY (fk_id_price_product) REFERENCES price_product (id_price_product);
+ALTER TABLE tax_price_product ADD FOREIGN KEY (fk_id_tax) REFERENCES tax (id_tax);
+ALTER TABLE ticket ADD FOREIGN KEY (fk_id_person_cashier) REFERENCES person (id_person);
+ALTER TABLE ticket ADD FOREIGN KEY (fk_id_person_customer) REFERENCES person (id_person);
+ALTER TABLE ticket_detail ADD FOREIGN KEY (fk_id_tax_price_product) REFERENCES TAX_PRICE_PRODUCT (id_tax_price_product);
+ALTER TABLE ticket_detail ADD FOREIGN KEY (fk_id_ticket) REFERENCES TICKET (id_ticket);
+ALTER TABLE ticket_detail ADD FOREIGN KEY (fk_id_person_administrator) REFERENCES PERSON (id_person);
+ALTER TABLE person_person_type ADD FOREIGN KEY (fk_id_person_type) REFERENCES person_type (id_person_type);
+ALTER TABLE person_person_type ADD FOREIGN KEY (fk_id_person) REFERENCES PERSON (id_person);
+
+

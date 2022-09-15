@@ -1,0 +1,16 @@
+co\edu\usta\tunja\supermarketwebapp\utility\Forms.class
+co\edu\usta\tunja\supermarketwebapp\controller\ProviderController.class
+co\edu\usta\tunja\supermarketwebapp\controller\PersonController.class
+co\edu\usta\tunja\supermarketwebapp\controller\ProductController.class
+co\edu\usta\tunja\supermarketwebapp\controller\PersonTypeController.class
+co\edu\usta\tunja\supermarketwebapp\controller\TaxController.class
+co\edu\usta\tunja\supermarketwebapp\controller\ProductProviderController.class
+co\edu\usta\tunja\supermarketwebapp\controller\ProductTypeController.class
+co\edu\usta\tunja\supermarketwebapp\controller\TicketController.class
+co\edu\usta\tunja\supermarketwebapp\controller\TicketDetailController.class
+co\edu\usta\tunja\supermarketwebapp\controller\PriceProductController.class
+co\edu\usta\tunja\supermarketwebapp\utility\Message.class
+co\edu\usta\tunja\supermarketwebapp\controller\TaxPriceProductController.class
+co\edu\usta\tunja\supermarketwebapp\JAXRSConfiguration.class
+co\edu\usta\tunja\supermarketwebapp\resources\JavaEE8Resource.class
+co\edu\usta\tunja\supermarketwebapp\controller\PersonPersonTypeController.class

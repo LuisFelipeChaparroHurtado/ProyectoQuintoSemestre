@@ -1,0 +1,82 @@
+==========================================================================================================================
+                                                           CREATE TABLE
+==========================================================================================================================
+
+
+CREATE TABLE PRODUCT_TYPE (
+  id_product_type SERIAL,
+  product_type_name VARCHAR(45) NOT NULL);
+
+CREATE TABLE  PRODUCT (
+  id_product SERIAL,
+  product_name VARCHAR(45) NOT NULL,
+  fk_id_product_type INT NOT NULL);
+
+CREATE TABLE  PERSON (
+  id_person SERIAL,
+  person_name VARCHAR(45),
+  person_last_name VARCHAR(45) NOT NULL,
+  person_address VARCHAR(45) NULL,
+  person_phone VARCHAR(45) NULL,
+  person_dni VARCHAR(10) NOT NULL);
+
+CREATE TABLE  PROVIDER (
+  id_provider SERIAL,
+  name VARCHAR(45) NOT NULL,
+  address VARCHAR(50) NOT NULL,
+  phone_number VARCHAR(45) NOT NULL,
+  url VARCHAR(45) NULL,
+  nit VARCHAR(45) NULL);
+
+CREATE TABLE  PRODUCT_PROVIDER (
+  id_product_provider SERIAL,
+  stock INT NOT NULL,
+  bar_code VARCHAR(45) NOT NULL,
+  fk_id_product INT NOT NULL,
+  fk_id_provider INT NOT NULL);
+
+CREATE TABLE  PRICE_PRODUCT (
+  id_price_product SERIAL,
+  sale_price DECIMAL(13,2) NOT NULL,
+  shop_price DECIMAL(13,2) NOT NULL,
+  start_date DATE NOT NULL,
+  user_update VARCHAR(40) NOT NULL,
+  date_update DATE NOT NULL,
+  fk_id_product_provider INT NOT NULL);
+
+CREATE TABLE  TAX (
+  id_tax SERIAL,
+  tax_value DECIMAL(5,2) NOT NULL,
+  tax_name VARCHAR(15) NOT NULL,
+  creation_date DATE NOT NULL);
+
+CREATE TABLE  TAX_PRICE_PRODUCT (
+  id_tax_price_product SERIAL,
+  fk_id_price_product INT NOT NULL,
+  fk_id_tax INT NOT NULL);
+
+CREATE TABLE  TICKET (
+  id_ticket SERIAL,
+  ticket_date DATE NOT NULL,
+  half_payment DECIMAL(15,2) NULL,
+  fk_id_person_cashier INT NOT NULL,
+  fk_id_person_customer INT NOT NULL);
+
+CREATE TABLE PERSON_TYPE (
+  id_person_type SERIAL,
+  person_type_name VARCHAR(45) NOT NULL);
+  
+CREATE TABLE  TICKET_DETAIL (
+  id_ticket_detail SERIAL,
+  amount INT NOT NULL,
+  devolution_request DATE NULL,
+  devolution_approved DATE NULL,
+  description_devolution VARCHAR(45) NULL,
+  fk_id_tax_price_product INT NOT NULL,
+  fk_id_ticket INT NOT NULL,
+  fk_id_person_administrator INT NULL);
+
+CREATE TABLE  PERSON_PERSON_TYPE (
+  id_person_person_type SERIAL,
+  fk_id_person_type INT NOT NULL,
+  fk_id_person INT NOT NULL);

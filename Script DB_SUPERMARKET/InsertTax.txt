@@ -1,0 +1,31 @@
+--- DELETE FROM public.tax
+--- 	WHERE id_tax = 29;
+
+SELECT * FROM supermarket."public".tax
+
+ALTER TABLE tax ALTER COLUMN tax_name SET DATA TYPE VARCHAR (70);
+
+SELECT * FROM supermarket."public".tax
+
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (1,'0.31','Renta y Ganancia Ocasional y Dividendos (Impuesto Renta)','20/09/2021');
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (2,'0.1','Renta y Ganancia Ocasional y Dividendos (Ganancia Ocacional)','20/09/2021');
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (3,'0','Impuesto al Valor Agregado (IVA)(0)','20/09/2021');
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (4,'0.05','Impuesto al Valor Agregado (IVA)(5)','20/09/2021');
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (5,'0.15','Impuesto al Valor Agregado (IVA)(15)','20/09/2021');
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (6,'0.19','Impuesto al Valor Agregado (IVA)(19)','20/09/2021');
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (7,'0.02','Impuesto al consumo (2)','20/09/2021');
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (8,'0.04','Impuesto al consumo (4)','20/09/2021');
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (9,'0.08','Impuesto al consumo (8)','20/09/2021');
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (10,'0.16','Impuesto al consumo (16)','20/09/2021');
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (11,'0.004','Impuesto a las Transacciones Financieras','20/09/2021');
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (12,'0.002','Impuesto de Industria y Comercio (0,2)','20/09/2021');
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (13,'0.014','Impuesto de Industria y Comercio (1,4)','20/09/2021');
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (14,'0.005','Impuesto Predial (0.5)','20/09/2021');
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (15,'0.016','Impuesto Predial (1.6)','20/09/2021');
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (16,'0.4','arancel precio FOB inferior a 10$us por kilo','20/09/2021');
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (17,'0.379','arancel importaciones Aduanas inferior a 20$us por kilo','20/09/2021');
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (18,'0.1','arancel adicional Aduanas superior a 3$us por kilo','20/09/2021');
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (19,'0.15','arancel adicional Importaciones','20/09/2021');
+INSERT INTO tax (id_tax, tax_value, tax_name, creation_date) VALUES (20,'0.15','Zonas francas','20/09/2021');
+
+SELECT * FROM supermarket."public".tax

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Taller Video</title>
+    </h:head>
+    <h:body>
+        <ui:composition template="/template.xhtml">
+            <ui:define name="content">
+                <br/>
+                <h:form>
+                    <p:growl id="menssage" sticky="true"/>
+                    <div align="center">
+                        <p:panelGrid columns="2" style="width: 50%">
+                            <f:facet name="header">PRODUCT PROVIDER CREATION FORM</f:facet>
+                            <p:outputLabel value="Stock" for="stock" style="width: 100%"/>
+                            <p:inputText id="stock" required="true" requiredMessage="#" value="#{productProviderController.campo.stock}" style="width: 100%"/>
+                            <p:outputLabel value="Bar Code" for="barCode" style="width: 100%"/>
+                            <p:inputText id="barCode" required="true" requiredMessage="#" value="#{productProviderController.campo.bar_code}" style="width: 100%"/>
+                            
+                            <p:outputLabel value="Product" for="@next" style="width: 100%"/>  
+                            <h:selectOneMenu  value="#{productProviderController.fkIdProd}" id="product" style="width: 100%; height: 30px">
+                                <f:selectItem itemLabel="Select One" itemValue=""/>
+                                <f:selectItems value="#{productController.productListado}" var="listProduct"
+                                               itemLabel="#{listProduct.product_name}" itemValue="#{listProduct.id}" />
+                            </h:selectOneMenu>
+                            <p:outputLabel value="Provider" for="@next" style="width: 100%"/>  
+                            <h:selectOneMenu  value="#{productProviderController.fkIdProvid}" id="provider" style="width: 100%; height: 30px">
+                                <f:selectItem itemLabel="Select One" itemValue=""/>
+                                <f:selectItems value="#{providerController.productTypeListado}" var="listProvider"
+                                               itemLabel="#{listProvider.providerName}" itemValue="#{listProvider.id}" />
+                            </h:selectOneMenu>
+                            <f:facet name="footer">
+                                <p:commandButton id="btn" style="margin-left: 35%" value="Update Product Provider" ajax="false" action="#{productProviderController.updateProductProvider()}"/>
+                            </f:facet>
+                        </p:panelGrid>
+                        
+                    </div>
+                    <br/>
+                </h:form>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
+
+
+

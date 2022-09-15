@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Taller Video</title>
+    </h:head>
+    <h:body>
+        <ui:composition template="/template.xhtml">
+            <ui:define name="content">
+                <br/>
+                <h:form>
+                    <p:growl id="menssage" sticky="true"/>
+                    <div align="center">
+                        <p:panelGrid columns="2" style="width: 50%">
+                            <f:facet name="header">PERSON CREATION FORM</f:facet>
+                            <p:outputLabel value="First Name" for="firstName"/>
+                            <p:inputText id="firstName" required="true" requiredMessage="#" value="#{personController.campo.person_first_name}" style="width: 100%"/>
+                            <p:outputLabel value="Last Name" for="lastName"/>
+                            <p:inputText id="lastName" required="true" requiredMessage="#" value="#{personController.campo.person_last_name}" style="width: 100%"/>
+                            <p:outputLabel value="Address" for="address"/>
+                            <p:inputText id="address" required="true" requiredMessage="#" value="#{personController.campo.direction}" style="width: 100%"/>
+                            <p:outputLabel value="Number phone" for="numberPhone"/>
+                            <p:inputText id="numberPhone" required="true" requiredMessage="#" value="#{personController.campo.phone}" style="width: 100%"/>
+                            <p:outputLabel value="Dni" for="dni"/>
+                            <p:inputText id="dni" required="true" requiredMessage="#" value="#{personController.campo.dni}" style="width: 100%"/>
+                            <f:facet name="footer" >
+                                <p:commandButton id="btn" style="margin-left: 35%" value="Update Person" ajax="false" action="#{personController.actualizarPerson()}"/>
+                            </f:facet>
+                        </p:panelGrid>
+                        
+                    </div>
+                    <br/>
+                </h:form>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
+
+
+

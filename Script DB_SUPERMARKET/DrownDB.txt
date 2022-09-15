@@ -1,0 +1,22 @@
+
+===========================================================================================================================
+                                                        DOWN DB
+===========================================================================================================================
+
+DROP TABLE PERSON_PERSON_TYPE CASCADE;
+DROP TABLE TICKET_DETAIL CASCADE;
+DROP TABLE PERSON_TYPE CASCADE;
+DROP TABLE TICKET;
+DROP TABLE TAX_PRICE_PRODUCT CASCADE;
+DROP TABLE TAX CASCADE;
+DROP TABLE PRICE_PRODUCT CASCADE;
+DROP TABLE PRODUCT_PROVIDER CASCADE;
+DROP TABLE PROVIDER CASCADE;
+DROP TABLE PERSON CASCADE;
+DROP TABLE PRODUCT CASCADE;
+DROP TABLE PRODUCT_TYPE CASCADE;
+
+
+
+
+

@@ -1,0 +1,24 @@
+CREATE ROLE user_des_em WITH
+	LOGIN
+	SUPERUSER
+	CREATEDB
+	CREATEROLE
+	INHERIT
+	NOREPLICATION
+	CONNECTION LIMIT -1
+	PASSWORD 'xxxxxx';
+
+CREATE DATABASE db_supermarket
+    WITH 
+    OWNER = user_des_em
+    ENCODING = 'UTF8'
+    CONNECTION LIMIT = -1;
+
+CREATE DATABASE db_supermarket
+    WITH 
+    OWNER = user_des_em
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'Spanish_Spain.1252'
+    LC_CTYPE = 'Spanish_Spain.1252'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;

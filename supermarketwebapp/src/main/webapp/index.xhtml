@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Taller Video</title>
+    </h:head>
+    <h:body>
+        <ui:composition template="/template.xhtml">
+            
+            <ui:define name="content">
+
+                <h:form>
+                    <p:growl id="mensajes" sticky="true"/>
+                    <div align="center">
+
+                        <p:panel>
+                            <p:panelGrid columns="3" style="text-align: center; margin-top: 5%; width: 80%">
+                                <p:outputLabel value="#{'PERSON'}" style="text-align: center; font-size: 15px; font-weight: 700"/>
+                                <p:commandButton value="#{'Create Person'}" action="person/createPerson" style="width: 100%"/>
+                                <p:commandButton value="#{'List Person'}" action="person/listPerson" style="width: 100%"/>
+
+                                <p:outputLabel value="#{'PERSON PERSON TYPE'}" style="text-align: center; font-size: 15px; font-weight: 700"/>
+                                <p:commandButton value="#{'Create P.person type'}" action="personPersonType/createPersonPersonType" style="width: 100%"/>
+                                <p:commandButton value="#{'List P.person type'}" action="personPersonType/listPersonPersonType" style="width: 100%"/>
+
+                                <p:outputLabel value="#{'PERSON TYPE'}" style="text-align: center; font-size: 15px; font-weight: 700"/>
+                                <p:commandButton value="#{'Create person type'}" action="personType/createPersonType" style="width: 100%"/>
+                                <p:commandButton value="#{'List person type'}" action="personType/listPersonType" style="width: 100%"/>
+
+                                <p:outputLabel value="#{'PRICE PRODUCT'}" style="text-align: center; font-size: 15px; font-weight: 700"/>
+                                <p:commandButton value="#{'Create Price product'}" action="priceProduct/createPriceProduct" style="width: 100%"/>
+                                <p:commandButton value="#{'List Price product'}" action="priceProduct/listPriceProduct" style="width: 100%"/>
+
+                                <p:outputLabel value="#{'PRODUCT'}" style="text-align: center; font-size: 15px; font-weight: 700"/>
+                                <p:commandButton value="#{'Create Product'}" action="product/crearProduct" style="width: 100%"/>
+                                <p:commandButton value="#{'List Product'}" action="product/listadoProduct" style="width: 100%"/>
+
+                                <p:outputLabel value="#{'PRODUCT PROVIDER'}" style="text-align: center; font-size: 15px; font-weight: 700"/>
+                                <p:commandButton value="#{'Create Product Provider'}" action="productProvider/createProductProvider" style="width: 100%"/>
+                                <p:commandButton value="#{'List Product Provider'}" action="productProvider/listProductProvider" style="width: 100%"/>
+
+                                <p:outputLabel value="#{'PRODUCT TYPE'}" style="text-align: center; font-size: 15px; font-weight: 700"/>
+                                <p:commandButton id="btn" value="#{'Create Product Type'}" action="productType/createProductType" style="width: 100%"/>
+                                <p:commandButton value="#{'List Product Type'}" action="productType/listProductType" style="width: 100%"/>
+
+                                <p:outputLabel value="#{'PROVIDER'}" style="text-align: center; font-size: 15px; font-weight: 700"/>
+                                <p:commandButton value="#{'Create Provider'}" action="provider/createProvider" style="width: 100%"/>
+                                <p:commandButton value="#{'List Provider'}" action="provider/listProvider" style="width: 100%"/>
+
+                                <p:outputLabel value="#{'TAX'}" style="text-align: center; font-size: 15px; font-weight: 700"/>
+                                <p:commandButton value="#{'Create Tax'}" action="tax/createTax" style="width: 100%"/>
+                                <p:commandButton  value="#{'List Tax'}" action="tax/listTax" style="width: 100%"/>
+
+                                <p:outputLabel value="#{'TAX PRICE PRODUCT'}" style="text-align: center; font-size: 15px; font-weight: 700"/>
+                                <p:commandButton value="#{'Create Tax Price Product'}" action="taxPriceProduct/createTaxPriceProduct" style="width: 100%"/>
+                                <p:commandButton value="#{'List Tax Price Product'}" action="taxPriceProduct/listTaxPriceProduct" style="width: 100%"/>
+
+                                <p:outputLabel value="#{'TICKET'}" style="text-align: center; font-size: 15px; font-weight: 700"/>
+                                <p:commandButton value="#{'Create Ticket'}" action="ticket/createTicket" style="width: 100%"/>
+                                <p:commandButton value="#{'List Ticket'}" action="ticket/listTicket" style="width: 100%"/>
+
+                                <p:outputLabel value="#{'TICKET DETAIL'}" style="text-align: center; font-size: 15px; font-weight: 700"/>
+                                <p:commandButton value="#{'Create Ticket Detail'}" action="ticketDetail/createTicketDetail" style="width: 100%"/>
+                                <p:commandButton value="#{'List Ticket Detail'}" action="ticketDetail/listTicketDetail" style="width: 100%"/>
+
+
+                            </p:panelGrid>
+                        </p:panel>
+                    </div>
+                </h:form>
+            </ui:define>
+            
+        </ui:composition>
+        <h:link outcome="WELCOMEPRIMEFACES" value="Primefaces welcome page"/>
+    </h:body>
+</html>
+
+

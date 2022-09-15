@@ -1,0 +1,21 @@
+
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (1,1,1);
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (2,2,2);
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (3,3,3);
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (4,4,4);
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (5,5,5);
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (6,6,6);
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (7,7,7);
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (8,8,8);
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (9,9,9);
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (10,10,10);
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (11,11,11);
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (12,12,12);
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (13,13,13);
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (14,14,14);
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (15,15,15);
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (16,16,16);
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (17,17,17);
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (18,18,18);
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (19,19,19);
+INSERT INTO tax_price_product (id_tax_price_product, fk_id_price_product,fk_id_tax) VALUES (20,20,20);

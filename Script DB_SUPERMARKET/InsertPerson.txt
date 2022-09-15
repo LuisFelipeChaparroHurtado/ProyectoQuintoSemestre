@@ -1,0 +1,24 @@
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (1,'Luis Felipe', 'Hernandez Acosta', 'lfha@gmail.com','3142587465','1057434321');
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (2,'Sara Gloria', 'Aguilar Navarro', 'sgan@gmail.com','3221478526','1057614301');
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (3,'Maria Lucinda', 'Aguirre Cruz', 'mlac@gmail.com','3154786458','1057794281');
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (4,'Jorge Arturo', 'Carrillo Garcia', 'jacg@gmail.com','3114457896','1057974261');
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (5,'Raul Fernando', 'Muñoz Lemus', 'rfml@gmail.com','3224487514','1058154241');
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (6,'David Francisco', 'Macias Lopez', 'dfml@gmail.com','3125489762','1058334221');
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (7,'Victor Manuel', 'Ascencio Lopez', 'vmal@gmail.com','3147896541','1058694181');
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (8,'Jorge Alberto', 'Gomez Lima', 'jagl@gmail.com','3198745821','1058874161');
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (9,'Mariano Enrique', 'Mejia Sanchez', 'mems@gmail.com','3138277354','1059054141');
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (10,'Alejandro Rafael', 'Mendoza Suarez', 'arms@gmail.com','3123538872','1059414101');
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (11,'Jose Luis', 'Carreño Martinez', 'jlcm@gmail.com','3112267084','1059594081');
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (12,'Fernando', 'Tejada Bello', 'ftb@gmail.com','3203181757','1059774061');
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (13,'Roberto Augusto', 'Perez Pineda', 'rapp@gmail.com','3167208456','1059954041');
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (14,'Sergio', 'Camargo Ponce', 'scp@gmail.com','3224587632','1060134021');
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (15,'Jose Emilio', 'Reyes Guerra', 'jerg@gmail.com','3168712594','1060314001');
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (16,'Enrique Octavio', 'Fuentes Pulido', 'eofp@gmail.com','3229384571','1060493981');
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (17,'Maria Teresa', 'Gutierrez Rocha', 'mtgr@gmail.com','3154789632','1060673961');
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (18,'Sara', 'Roldan Romero', 'srr@gmail.com','3142587465','1060853941');
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (19,'Maria del Carmen', 'Sanchez Vazquez', 'mcsv@gmail.com','3114578234','1061033921');
+INSERT INTO person (id_person,person_name, person_last_name, person_address, person_phone, person_dni) VALUES (20,'Ana Elena', 'Torres Corzo', 'aetc@gmail.com','3163205874','1061213901');
+
+
+
+

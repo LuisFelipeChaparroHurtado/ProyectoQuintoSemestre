@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Taller Video</title>
+    </h:head>
+    <h:body>
+        <ui:composition template="/template.xhtml">
+            <ui:define name="content">
+                <h:form>
+                    <p:growl id="menssage" sticky="true"/>
+                    <p:dataTable value="#{productProviderController.productProviderListado}" var="register" style="margin-left: 5%; margin-right: 5%; background-color: #ffffff">
+                        <p:column style="color: #ffffff ;background-color: #000000; text-align: center;width: 30%">
+                            <f:facet name="header">Id</f:facet>
+                                #{register.id}
+                        </p:column>
+                        <p:column style="color: #ffffff ;background-color: #388fd6; text-align: center;width: 40%">
+                            <f:facet name="header">Stock</f:facet>
+                                #{register.stock}
+                        </p:column>
+                        <p:column style="color: #ffffff ;background-color: #388fd6; text-align: center;width: 40%">
+                            <f:facet name="header">Bar Code</f:facet>
+                                #{register.bar_code}
+                        </p:column>
+                        <p:column style="color: #ffffff ;background-color: #388fd6; text-align: center;width: 40%">
+                            <f:facet name="header">Product Name</f:facet>
+                                #{register.fkProduct.product_name}
+                        </p:column>
+                        <p:column style="color: #ffffff ;background-color: #388fd6; text-align: center;width: 40%">
+                            <f:facet name="header">Provider Name</f:facet>
+                                #{register.fkProviderEntity.providerName}
+                        </p:column>
+                        <p:column style="color: #ffffff ;background-color: #388fd6; text-align: center; width: 20%">
+                            <f:facet name="header">Edit</f:facet>
+                            <h:commandButton  action="#{productProviderController.deleteProductProvider(register)}" image="1214594.png" style="width: 30px; height: 30px"/>
+                        </p:column>
+                        <p:column style="color: #ffffff ;background-color: #388fd6; text-align: center; width: 20%">
+                            <f:facet name="header">Edit</f:facet>
+                            <h:commandButton action="#{productProviderController.cargarID(register.id)}" image="104668.png" style="width: 30px; height: 30px"/>
+                        </p:column>
+                    </p:dataTable>
+                </h:form>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
